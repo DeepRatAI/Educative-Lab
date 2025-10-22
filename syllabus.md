@@ -2,7 +2,7 @@
 
 ## Descripción General
 
-Este es un hub educativo modular diseñado para el aprendizaje práctico de Computer Vision, Deep Learning y AI. Todas las lecciones están optimizadas para ejecutarse en **CPU** y son completamente **reproducibles**.
+Este es un hub educativo modular diseñado para el aprendizaje práctico de Computer Vision, Deep Learning y AI. Las lecciones están optimizadas para ejecutarse en **Google Colab**, aprovechando el entorno gratuito con GPU opcional.
 
 ---
 
@@ -14,51 +14,63 @@ Este es un hub educativo modular diseñado para el aprendizaje práctico de Comp
 **Autor:** [@DeepRatAI](https://github.com/DeepRatAI)  
 **Nivel:** Intermedio  
 **Duración estimada:** 2-3 horas  
+**Plataforma:** Google Colab
 
 **Objetivos de aprendizaje:**
+
 - Comprender los fundamentos de detección de objetos con YOLOv8
 - Aplicar YOLOv8 para detección en video
 - Visualizar y analizar resultados de detección
-- Trabajar con modelos pre-entrenados en CPU
+- Trabajar con modelos pre-entrenados
 
 **Requisitos previos:**
+
 - Python básico
 - Conocimientos básicos de Computer Vision
+- Cuenta de Google (para usar Colab)
 - Familiaridad con NumPy y OpenCV (opcional)
 
 **Contenido:**
+
 - Introducción a YOLO (You Only Look Once)
-- Configuración del entorno
+- Configuración del entorno en Colab
 - Carga y uso de modelos YOLOv8
 - Procesamiento de video frame por frame
 - Visualización de detecciones
 
 **Recursos:**
-- 📓 Notebook: `Yolov8_Detector.ipynb`
+
+- 📓 Notebook: `Yolov8_Detector.ipynb` (diseñado para Colab)
 - 📹 Video de ejemplo: `walk_1.mp4`
 - 📦 Dependencias: Ver `requirements.txt` en la lección
+- 🔗 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DeepRatAI/Educative-Lab/blob/main/lessons/01_yolov8_intro/Yolov8_Detector.ipynb)
 
 ---
 
 ## 🔮 Lecciones Futuras (Planificadas)
 
 ### 02. Image Classification con Transfer Learning
+
 > **Estado:** En planificación  
 > Clasificación de imágenes usando modelos pre-entrenados (ResNet, EfficientNet)
 
 ### 03. Segmentación Semántica
+
 > **Estado:** En planificación  
 > Segmentación pixel-wise con U-Net y Mask R-CNN
 
 ### 04. Pose Estimation
+
 > **Estado:** En planificación  
 > Estimación de poses humanas con MediaPipe y YOLO-Pose
 
 ### 05. Object Tracking
+
 > **Estado:** En planificación  
 > Seguimiento de objetos en video (DeepSORT, ByteTrack)
 
 ### 06. GANs Fundamentals
+
 > **Estado:** En planificación  
 > Introducción a Generative Adversarial Networks
 
@@ -102,9 +114,10 @@ Cada lección incluye:
 ## ⚙️ Requisitos Técnicos Generales
 
 - **Python:** 3.11 o superior
-- **Hardware:** CPU suficiente (no requiere GPU)
-- **RAM:** 8GB mínimo (16GB recomendado)
-- **Espacio en disco:** ~500MB por lección
+- **Plataforma:** Google Colab (recomendado) o local
+- **Cuenta Google:** Para acceder a Google Colab
+- **RAM:** 8GB mínimo local (Colab provee recursos)
+- **Espacio en disco:** Varía por lección (~500MB típico)
 
 ---
 
@@ -113,9 +126,10 @@ Cada lección incluye:
 Si quieres proponer una nueva lección:
 
 1. Revisa la plantilla en `lessons/_template/`
-2. Asegúrate de que sea **CPU-only** y **reproducible**
+2. Las lecciones pueden ser para **Google Colab** o **ejecución local**
 3. Incluye documentación clara y ejemplos prácticos
-4. Abre un issue con tu propuesta antes de empezar
+4. Si es para Colab, agrega el badge "Open in Colab"
+5. Abre un issue con tu propuesta antes de empezar
 
 ---
 

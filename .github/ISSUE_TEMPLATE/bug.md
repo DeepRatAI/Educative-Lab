@@ -1,10 +1,9 @@
 ---
 name: Bug Report
 about: Reportar un error o problema en una lección
-title: '[BUG] '
+title: "[BUG] "
 labels: bug
-assignees: ''
-
+assignees: ""
 ---
 
 ## 🐛 Descripción del Bug

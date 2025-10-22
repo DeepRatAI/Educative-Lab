@@ -20,30 +20,39 @@ Relates to #(issue)
 ## 📝 Checklist de Pre-Merge
 
 ### General
+
 - [ ] He leído el [CONTRIBUTING.md](CONTRIBUTING.md) (si existe)
 - [ ] Mi código sigue el estilo del proyecto
 - [ ] He realizado self-review de mi código
 - [ ] He comentado mi código en áreas difíciles de entender
 
 ### Testing
-- [ ] ✅ CI está en verde (todos los tests pasan)
+
+- [ ] ✅ CI está en verde (validación de estructura pasa)
 - [ ] He probado mi código localmente con `make test`
-- [ ] He verificado que los notebooks se ejecutan sin errores
-- [ ] He testeado en CPU-only (sin dependencias de GPU)
+- [ ] He verificado que los notebooks tienen estructura válida
+- [ ] Si es para Colab: He testeado en Google Colab que funciona correctamente
+- [ ] Si es local: He verificado que se ejecuta sin errores en CPU
 
 ### Archivos y Tamaño
+
 - [ ] 📦 No hay archivos >25MB en este PR
 - [ ] He agregado archivos grandes al `.gitignore` si es necesario
 - [ ] Los datasets se descargan bajo demanda (no están en el repo)
 
 ### Documentación
+
 - [ ] 📚 He actualizado el README.md si es necesario
 - [ ] He actualizado el syllabus.md con la nueva lección (si aplica)
 - [ ] He incluido un README.md en la carpeta de la lección
 - [ ] He documentado las dependencias en requirements.txt
 
 ### Lecciones (si aplica)
-- [ ] La lección es completamente reproducible en CPU
+
+- [ ] He especificado la plataforma (Google Colab / Local / Ambas)
+- [ ] Si es Colab: He agregado badge "Open in Colab" en README
+- [ ] Si es Colab: He verificado que funciona en Colab
+- [ ] Si es local: Es reproducible en CPU/GPU según se especifique
 - [ ] He incluido objetivos de aprendizaje claros
 - [ ] He agregado ejemplos prácticos
 - [ ] He incluido ejercicios (opcional pero recomendado)
@@ -53,15 +62,18 @@ Relates to #(issue)
 ## 🧪 Evidencia de Testing
 
 ### Ejecución local
+
 ```bash
 # Pega aquí la salida de `make test`
 ```
 
 ### Notebooks ejecutados
+
 - [ ] `lessons/01_yolov8_intro/Yolov8_Detector.ipynb` ✅
 - [ ] [Agregar más si aplica]
 
 ### Screenshots (opcional)
+
 [Si has hecho cambios visuales, agrega capturas de pantalla]
 
 ## 📊 Archivos Modificados
@@ -91,11 +103,12 @@ make test
 ## ✅ Review Checklist (para Reviewers)
 
 - [ ] El código es claro y mantenible
-- [ ] Los notebooks se ejecutan correctamente
+- [ ] Los notebooks tienen estructura válida
 - [ ] La documentación es adecuada
 - [ ] No hay dependencias innecesarias
 - [ ] Los cambios siguen las guías del proyecto
 - [ ] CI está en verde
+- [ ] Si es Colab: Badge y link funcionan correctamente
 
 ---
 

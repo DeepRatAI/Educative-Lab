@@ -10,14 +10,25 @@
 
 **Educative-Lab** es un repositorio centralizado que contiene lecciones completas, autocontenidas y reproducibles sobre temas de visión por computadora e inteligencia artificial. Cada lección está diseñada para:
 
-- ✅ Ejecutarse completamente en **CPU** (sin requisitos de GPU)
+- ✅ Ejecutarse en **Google Colab** (entorno gratuito con GPU opcional)
 - ✅ Ser **reproducible** con dependencias mínimas
 - ✅ Incluir **teoría + práctica** en formato notebook interactivo
 - ✅ Mantener **autoría** y **licencias** originales
 
 ## 🚀 Quickstart
 
-### Instalación
+### Opción 1: Google Colab (Recomendado)
+
+Las lecciones están optimizadas para ejecutarse en **Google Colab**:
+
+1. Navega a la lección deseada en `lessons/`
+2. Abre el notebook (`.ipynb`)
+3. Haz clic en el botón "Open in Colab" o copia el contenido
+4. Ejecuta las celdas en Colab
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DeepRatAI/Educative-Lab/blob/main/lessons/01_yolov8_intro/Yolov8_Detector.ipynb)
+
+### Opción 2: Desarrollo Local
 
 ```bash
 # Clonar el repositorio
@@ -30,13 +41,13 @@ source .venv/bin/activate  # En Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### Ejecutar lecciones
+### Validar notebooks localmente
 
 ```bash
-# Ejecutar tests de notebooks (verifica que todo funcione)
+# Validar estructura de notebooks
 make test
 
-# Exportar notebooks a HTML
+# Exportar notebooks a HTML para visualización
 make html
 
 # Los resultados estarán en build/html/
@@ -48,14 +59,14 @@ Cada lección está en su propia carpeta dentro de `lessons/`:
 
 ```bash
 cd lessons/01_yolov8_intro
-jupyter notebook Yolov8_Detector.ipynb
+# Ver README.md para instrucciones específicas de la lección
 ```
 
 ## 📚 Índice de Lecciones
 
-| # | Título | Descripción | Nivel | Autor |
-|---|--------|-------------|-------|-------|
-| 01 | [YOLOv8 Intro](lessons/01_yolov8_intro/) | Detección de objetos en video con YOLOv8 | Intermedio | [@DeepRatAI](https://github.com/DeepRatAI) |
+| #   | Título                                   | Descripción                              | Nivel      | Plataforma    | Autor                                      |
+| --- | ---------------------------------------- | ---------------------------------------- | ---------- | ------------- | ------------------------------------------ |
+| 01  | [YOLOv8 Intro](lessons/01_yolov8_intro/) | Detección de objetos en video con YOLOv8 | Intermedio | Google Colab  | [@DeepRatAI](https://github.com/DeepRatAI) |
 
 > 💡 **Próximamente:** Más lecciones sobre segmentación, clasificación, pose estimation, y más.
 
@@ -81,7 +92,7 @@ Educative-Lab/
 ```bash
 make help    # Ver todos los comandos disponibles
 make setup   # Configurar entorno desde cero
-make test    # Ejecutar notebooks con nbconvert
+make test    # Validar estructura de notebooks
 make html    # Exportar notebooks a HTML
 make clean   # Limpiar artefactos de build
 ```
@@ -90,21 +101,24 @@ make clean   # Limpiar artefactos de build
 
 El repositorio incluye integración continua que:
 
-- ✅ Ejecuta todos los notebooks en CPU
+- ✅ Valida estructura de notebooks
 - ✅ Verifica que no haya archivos >25MB
 - ✅ Exporta notebooks a HTML como artefactos
-- ✅ Timeout de 5 minutos por notebook
+- ✅ Compatible con notebooks de Google Colab
+
+> **Nota:** Los notebooks no se ejecutan en CI ya que están diseñados para Google Colab con dependencias específicas.
 
 Ver [`.github/workflows/ci.yml`](.github/workflows/ci.yml) para detalles.
 
 ## 📝 Contribuir
 
-¿Quieres agregar una nueva lección? 
+¿Quieres agregar una nueva lección?
 
 1. Usa la plantilla en [`lessons/_template/`](lessons/_template/)
-2. Asegúrate de que tu lección sea **CPU-only** y **reproducible**
+2. Las lecciones pueden ser para **Google Colab** o **locales** (especifica en README)
 3. Incluye `README.md`, `requirements.txt` y `LICENSE` si es diferente a MIT
-4. Abre un PR siguiendo el [template](.github/PULL_REQUEST_TEMPLATE.md)
+4. Agrega badge "Open in Colab" si aplica
+5. Abre un PR siguiendo el [template](.github/PULL_REQUEST_TEMPLATE.md)
 
 ## 📄 Licencia
 
@@ -113,6 +127,7 @@ Este repositorio está bajo licencia [MIT](LICENSE). Cada lección individual pu
 ## 👨‍💻 Autor
 
 **DeepRatAI**
+
 - GitHub: [@DeepRatAI](https://github.com/DeepRatAI)
 
 ---
