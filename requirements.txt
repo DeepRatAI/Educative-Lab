@@ -1,0 +1,23 @@
+# Core Jupyter dependencies
+notebook>=7.0.0
+jupyter>=1.0.0
+nbconvert>=7.0.0
+nbformat>=5.0.0
+
+# Data science essentials (CPU-only)
+numpy>=1.24.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+scikit-learn>=1.3.0
+umap-learn>=0.5.3
+
+# Computer vision (CPU-only)
+opencv-python-headless>=4.8.0
+pillow>=10.0.0
+
+# Deep learning inference (CPU-only)
+ultralytics>=8.0.0  # YOLOv8 library
+
+# Utilities
+tqdm>=4.65.0
