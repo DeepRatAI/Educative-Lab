@@ -1,0 +1,22 @@
+# requirements.txt para Product_Detector
+
+# Visión y detección
+ultralytics          # YOLOv8  
+opencv-python        # Captura y procesamiento de vídeo  
+
+# Tracking  
+# (tracker IoU minimalista no necesita librería externa)  
+
+# Interfaces  
+gradio               # Demo rápida en Colab  
+
+# Manipulación de datos  
+numpy                # Operaciones numéricas  
+
+# Carga de datasets  
+datasets             # HF Datasets para verificar clases COCO  
+
+# Backend ML  
+torch                # Motor de inferencia de ultralytics  
+torchvision          # Transformaciones de imágenes (posiblemente útiles)  
+

@@ -1,0 +1,105 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, feature/* ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        python-version: ['3.11']
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+        cache: 'pip'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: File size gate check
+      run: |
+        echo "🔍 Checking for files larger than 25MB..."
+        large_files=$(find . -type f -size +25M -not -path "./.git/*" -not -path "./.venv/*" -not -path "./build/*")
+        if [ -n "$large_files" ]; then
+          echo "❌ ERROR: The following files exceed 25MB:"
+          echo "$large_files"
+          exit 1
+        else
+          echo "✅ All files are within size limit (25MB)"
+        fi
+    
+    - name: Create build directory
+      run: mkdir -p build/html
+    
+    - name: Validate notebook structure
+      run: |
+        echo "� Validating notebook structure..."
+        
+        # Lesson 01: YOLOv8 Intro
+        if [ -f lessons/01_yolov8_intro/Yolov8_Detector.ipynb ]; then
+          echo "📓 Validating lessons/01_yolov8_intro/Yolov8_Detector.ipynb..."
+          python -m jupyter nbconvert --to notebook \
+            --output-dir=build/html \
+            --output=01_yolov8_intro_validated.ipynb \
+            lessons/01_yolov8_intro/Yolov8_Detector.ipynb
+          echo "✅ Notebook structure is valid!"
+        else
+          echo "⚠️  No notebook found in lessons/01_yolov8_intro/"
+        fi
+        
+        # Note: These notebooks are designed for Google Colab
+        # They require Colab-specific features (drive mount, colab imports)
+        # so we validate structure but don't execute them in CI
+    
+    - name: Export notebooks to HTML
+      run: |
+        echo "📄 Exporting notebooks to HTML..."
+        
+        if [ -f lessons/01_yolov8_intro/Yolov8_Detector.ipynb ]; then
+          jupyter nbconvert --to html \
+            --output-dir=build/html \
+            --output=01_yolov8_intro.html \
+            lessons/01_yolov8_intro/Yolov8_Detector.ipynb
+          echo "✅ HTML export completed!"
+        fi
+    
+    - name: Upload HTML artifacts
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: notebook-html-python-${{ matrix.python-version }}
+        path: build/html/
+        retention-days: 30
+    
+    - name: Test summary
+      if: always()
+      run: |
+        echo "## 📊 Test Summary" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "- **Python Version:** ${{ matrix.python-version }}" >> $GITHUB_STEP_SUMMARY
+        echo "- **Runner OS:** Ubuntu Latest" >> $GITHUB_STEP_SUMMARY
+        echo "- **Notebooks:** Designed for Google Colab" >> $GITHUB_STEP_SUMMARY
+        echo "- **CI Validation:** Structure check + HTML export" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "ℹ️ **Note:** Notebooks are validated but not executed in CI (Colab-specific)" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        
+        if [ -d build/html ]; then
+          echo "### 📁 Generated Artifacts" >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+          ls -lh build/html/ >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+        fi
