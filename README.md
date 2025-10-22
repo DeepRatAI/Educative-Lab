@@ -64,9 +64,9 @@ cd lessons/01_yolov8_intro
 
 ## 📚 Índice de Lecciones
 
-| #   | Título                                   | Descripción                              | Nivel      | Plataforma    | Autor                                      |
-| --- | ---------------------------------------- | ---------------------------------------- | ---------- | ------------- | ------------------------------------------ |
-| 01  | [YOLOv8 Intro](lessons/01_yolov8_intro/) | Detección de objetos en video con YOLOv8 | Intermedio | Google Colab  | [@DeepRatAI](https://github.com/DeepRatAI) |
+| #   | Título                                   | Descripción                              | Nivel      | Plataforma   | Autor                                      |
+| --- | ---------------------------------------- | ---------------------------------------- | ---------- | ------------ | ------------------------------------------ |
+| 01  | [YOLOv8 Intro](lessons/01_yolov8_intro/) | Detección de objetos en video con YOLOv8 | Intermedio | Google Colab | [@DeepRatAI](https://github.com/DeepRatAI) |
 
 > 💡 **Próximamente:** Más lecciones sobre segmentación, clasificación, pose estimation, y más.
 

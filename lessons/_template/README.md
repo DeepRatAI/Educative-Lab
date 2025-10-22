@@ -13,6 +13,7 @@
 ## 🔗 Acceso Rápido
 
 <!-- Si la lección es para Google Colab, incluye este badge -->
+
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DeepRatAI/Educative-Lab/blob/main/lessons/XX_lesson_name/notebook.ipynb)
 
 ## 🎯 Objetivos de Aprendizaje
@@ -34,11 +35,13 @@ Al completar esta lección, serás capaz de:
 ### Plataforma y software:
 
 **Opción 1: Google Colab (Recomendado)**
+
 - Cuenta de Google (gratuita)
 - Navegador web moderno
 - Conexión a internet
 
 **Opción 2: Ejecución Local**
+
 - Python 3.11+
 - Ver `requirements.txt` para dependencias
 - [Especificar si se necesita GPU]
@@ -148,12 +151,14 @@ jupyter notebook notebook.ipynb
 ## 💻 Requisitos de Hardware
 
 ### Google Colab
+
 - **CPU/GPU:** Provisto por Google (gratuito con límites)
 - **RAM:** 12-16GB (según disponibilidad)
 - **Disco:** ~100GB temporal
 - **Conexión:** Internet requerida
 
 ### Ejecución Local
+
 - **CPU:** Cualquier CPU moderna (2+ cores recomendado)
 - **GPU:** [Especificar si es requerida u opcional]
 - **RAM:** XGB mínimo (YGB recomendado)
