@@ -45,7 +45,7 @@ Todas las lecciones están desarrolladas en **Jupyter Notebooks**, diseñadas pa
 
 El programa se divide en **15 módulos** organizados en **5 fases progresivas**, cada uno con varios **capítulos** que combinan contenido teórico y práctico.
 
-**Ver el [📘 SYLLABUS completo](SYLLABUS.md)** para información detallada de todos los módulos, objetivos de aprendizaje, proyectos y cronogramas sugeridos.
+**Ver el [📘 SYLLABUS completo](SYLLABUS_ES.md)** para información detallada de todos los módulos, objetivos de aprendizaje, proyectos y cronogramas sugeridos.
 
 Cada capítulo incluye:
 
@@ -80,7 +80,7 @@ Próximas publicaciones:
 | **3. IA Generativa y LLMs**              | Transformers, fine-tuning y diseño de grandes modelos | 07–11   |
 | **4. Agentes de IA y Sistemas RAG**      | RAG, LangChain, Agents y orquestación inteligente     | 12–15   |
 
-**📘 [Ver SYLLABUS completo](SYLLABUS.md)** para detalles de cada módulo, lecciones, proyectos y cronogramas.
+**📘 [Ver SYLLABUS completo](SYLLABUS_ES.md)** para detalles de cada módulo, lecciones, proyectos y cronogramas.
 
 ---
 
