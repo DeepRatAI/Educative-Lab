@@ -21,7 +21,7 @@
   <a href="#-estructura">Estructure</a> •
   <a href="#-ruta-de-aprendizaje">Route of Apprentice</a> •
   <a href="SYLLABUS_EN.md">📘 Complete Syllabus</a> •
-  <a href="QUICK_START.md">🚀 Quick Start Guide</a>
+  <a href="QUICK_START-(EN\ES).md">🚀 Quick Start Guide</a>
 </p>
 
 
