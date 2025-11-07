@@ -8,6 +8,8 @@
 
 *A DeepRat Educative Lab Program*
 
+*[_Versión en Español aquí_](README_ES.md)*  
+
 ---
 
 ## 🌍 About the Program
@@ -24,7 +26,7 @@ All lessons are available in English and Spanish!
 
 ## 🚀 Structure
 
-The program is divided into **13 modules**, each containing multiple **chapters** with theoretical and practical content.
+The program is divided into **15 modules**, each containing multiple **chapters** with theoretical and practical content.
 
 Each chapter includes:
 
@@ -58,7 +60,7 @@ Upcoming releases:
 | **1. Machine Learning Foundations** | Core algorithms and supervised learning           | 01–02   |
 | **2. Deep Learning Architectures**  | Neural networks, TensorFlow, Keras, PyTorch       | 03–06   |
 | **3. Generative AI & LLMs**         | Transformers, fine-tuning, and large model design | 07–11   |
-| **4. AI Agents & RAG Systems**      | Retrieval, context, and intelligent orchestration | 12–13   |
+| **4. AI Agents & RAG Systems**      | Retrieval, context, and intelligent orchestration | 12–15   |
 
 ---
 
