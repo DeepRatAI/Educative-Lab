@@ -19,6 +19,8 @@ Así como *Python para Todos* una vez me abrió una puerta, este programa busca 
 
 Todas las lecciones están desarrolladas en **Jupyter Notebooks**, diseñadas para **Google Colab (versión gratuita)** — compatibles con GPU cuando es necesario — y centradas en **sistemas de IA reales y reproducibles**.
 
+¡Todas las lecciones están disponibles en inglés y español!
+(Los archivos en Ingles se designan "_EN" )
 ---
 
 ## 🚀 Estructura
