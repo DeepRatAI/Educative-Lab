@@ -18,6 +18,7 @@ The project is inspired by the spirit of *open education*.
 Just like *Python para Todos* once opened a door for me, this program aims to open that same door for anyone eager to learn and build — no subscription, no GPU cost, no barrier.
 
 All lessons are built in **Jupyter Notebooks**, designed for **Google Colab Free Tier** (GPU-compatible when needed), and focused on **real, reproducible AI systems**.
+
 All lessons are available in English and Spanish!
 ---
 
