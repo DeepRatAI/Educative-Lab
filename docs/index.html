@@ -12,8 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button class="language-btn" onclick="switchLanguage('es')">ES</button>
+        <button class="language-btn active" onclick="switchLanguage('en')">EN</button>
+    </div>
+
     <!-- Hero Section -->
-    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
 <div id="particles-js" class="w-full h-full"></div>
             <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/30 hovered-element"></div>
@@ -88,12 +94,11 @@
                 </div>
             </div>
             <div class="mt-10 text-center">
-            <p class="text-gray-600"><a href="https://github.com/DeepRatAI/Educative-Lab/blob/main/SYLLABUS_EN.md" class="underline">Full syllabus available on GitHub</a> | <a href="#" class="underline">Versión en Español</a></p>
+            <p class="text-gray-600"><a href="https://github.com/DeepRatAI/Educative-Lab/blob/main/SYLLABUS_EN.md" class="underline">Full syllabus available on GitHub</a> | <a href="index_es.html" class="underline">Versión en Español</a></p>
 </div>
-        </div>
+</div>
     </section>
-
-    <!-- Current Releases -->
+<!-- Current Releases -->
     <section class="py-20 px-6">
         <div class="max-w-4xl mx-auto bg-gray-100 p-8 rounded-xl">
             <h2 class="text-3xl md:text-4xl font-bold mb-6">Now Available</h2>
@@ -168,5 +173,14 @@
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>feather.replace();</script>
 <script src="https://huggingface.co/deepsite/deepsite-badge.js"></script>
+<script>
+function switchLanguage(lang) {
+    if (lang === 'es') {
+        window.location.href = 'index_es.html';
+    } else {
+        window.location.href = 'index.html';
+    }
+}
+</script>
 </body>
 </html>
