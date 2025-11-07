@@ -21,8 +21,8 @@ _Un programa de DeepRat Educative Lab_
   <a href="#-sobre-el-programa">Sobre el Programa</a> •
   <a href="#-estructura">Estructura</a> •
   <a href="#-ruta-de-aprendizaje">Ruta de Aprendizaje</a> •
-  <a href="SYLLABUS.md">📘 Syllabus Completo</a> •
-  <a href="QUICK_START.md">🚀 Guía de Inicio Rápido</a>
+  <a href="SYLLABUS_ES.md">📘 Syllabus Completo</a> •
+  <a href="QUICK_START-(EN\ES).md">🚀 Guía de Inicio Rápido</a>
 </p>
 
 ---
