@@ -7,6 +7,23 @@
 ### *AI Systems Engineering: From Machine Learning to Generative Intelligence*
 
 *A DeepRat Educative Lab Program*
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python" alt="Python">
+  <img src="https://img.shields.io/badge/Modules-15-green?style=for-the-badge" alt="Modules">
+  <img src="https://img.shields.io/badge/Lessons-70%2B-orange?style=for-the-badge" alt="Lessons">
+  <img src="https://img.shields.io/badge/License-MIT-red?style=for-the-badge" alt="License">
+  <img src="https://img.shields.io/github/last-commit/DeepRatAI/Educative-Lab?style=for-the-badge" alt="Last Commit">
+</p>
+
+
+<p align="center">
+  <a href="#-sobre-el-programa">About the Program</a> •
+  <a href="#-estructura">Estructure</a> •
+  <a href="#-ruta-de-aprendizaje">Route of Apprentice</a> •
+  <a href="SYLLABUS_EN.md">📘 Complete Syllabus</a> •
+  <a href="QUICK_START.md">🚀 Quick Start Guide</a>
+</p>
+
 
 *[_Versión en Español aquí_](README_ES.md)*  
 
